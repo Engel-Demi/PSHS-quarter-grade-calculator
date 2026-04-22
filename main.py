@@ -22,12 +22,16 @@ def get_tentative():
 # GWA + Corresponding adjective ratings and also the percentages.
 def get_gwa(percent):
     if percent >= 97: return 1.00, "Excellent"
-    if percent >= 91: return 1.25, "Very Good"
-    if percent >= 85: return 1.50, "Good"
-    if percent >= 80: return 1.75, "Satisfactory"
-    if percent >= 75: return 2.00, "Unsatisfactory"
-    if percent >= 70: return 2.50, "Conditional"
-    return 5.00, "Fail"
+    if percent >= 94: return 1.25, "Very Good"
+    if percent >= 91: return 1.50, "Very Good"
+    if percent >= 88: return 1.75, "Good"
+    if percent >= 85: return 2.00, "Satisfactory"
+    if percent >= 82: return 2.25, "Satisfactory"
+    if percent >= 80: return 2.50,  "satisfactory"
+    if percent >= 78: return 2.75,  "Fair"
+    if percent >= 75: return 3.00,  "Pass"
+    if percent >= 70: return 4.00,  "Conditional"
+    if percent <= 70: return 5.00,  "FAIL"
 
 quarter = int(input("What quarter is it? (1-4): "))
 tq = get_tentative() 
