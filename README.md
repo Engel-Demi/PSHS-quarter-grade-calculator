@@ -36,7 +36,3 @@ The final percentage is mapped to a GWA scale:
 | 75 - 79 | 2.00 | Unsatisfactory |
 | 70 - 74 | 2.50 | Conditional |
 | Below 70 | 5.00 | Fail |
- (0-100): 88
-
-Final Q2 Grade: 92.00%
-GWA: 1.25 (Very Good)
