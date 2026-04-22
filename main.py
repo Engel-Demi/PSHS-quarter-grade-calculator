@@ -1,4 +1,4 @@
-# These functions exist to modularize and shorten the code, making it adaptable to all cases.
+# These functions exist to modularize and shorten the code, making it adaptable to all cases. Yes thats true
 def get_tentative():
     print("\n--- Inputting Scores ---")
     # For each part, enter your score, then the max total
