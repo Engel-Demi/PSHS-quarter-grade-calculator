@@ -84,3 +84,25 @@ gwa, remark = get_gwa(final_p)
 # Printing the results of the scholar.
 print(f"\nFinal Q{quarter} Grade: {final_p:.2f}%")
 print(f"GWA: {gwa:.2f} ({remark})")
+
+
+
+import subprocess  # NEW: allows running another script
+
+# Printing the results of the scholar.
+print(f"\nFinal Q{quarter} Grade: {final_p:.2f}%")
+print(f"GWA: {gwa:.2f} ({remark})")
+
+
+# NEW: Ask user what they want to do next
+print("\n--- Next Step ---")
+choice = input("Do you want to access advanced features? (Y/N): ").strip().upper()
+
+if choice == "Y":
+    print("\nLaunching advanced setup...\n")
+    
+    # Runs the advanced script
+    subprocess.run(["python", "advanced_mode.py"])
+
+else:
+    print("\nProgram finished. Goodbye!")
