@@ -32,8 +32,6 @@ def gwa_to_percent(gwa):
     }
     return mapping.get(gwa, None)
 
-
-# 🔮 FEATURE 1: Grade Projection
 def grade_projection():
     print("\n--- Grade Projection ---")
 
@@ -58,8 +56,6 @@ def grade_projection():
     elif needed < 0:
         print("✅ You're already exceeding this target.")
 
-
-# 📊 FEATURE 2: Multi-subject GWA
 def multi_subject_gwa():
     print("\n--- Multi-Subject GWA Calculator ---")
 
@@ -75,8 +71,6 @@ def multi_subject_gwa():
 
     print(f"\nOverall GWA: {avg:.2f}")
 
-
-# 📈 FEATURE 3: Trend Simulation
 def trend_simulation():
     print("\n--- Trend Simulation ---")
 
@@ -91,8 +85,6 @@ def trend_simulation():
         gwa = percent_to_gwa(current)
         print(f"Q{i}: {current:.2f}% → GWA {gwa:.2f}")
 
-
-# 🎛️ MAIN MENU
 def run():
     while True:
         print("\n=== Advanced Mode ===")
